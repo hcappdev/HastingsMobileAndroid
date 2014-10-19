@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#e5e5e5">
+
+    <ListView android:id="@+id/contacts_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Alex/Google%20Drive/CS/GitHub/PersonalProjects/HastingsCollegeProject/HastingsCollege/src/main/res/layout/emergency_contacts.xml -->

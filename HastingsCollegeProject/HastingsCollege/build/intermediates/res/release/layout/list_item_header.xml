@@ -1,0 +1,41 @@
+<!--
+  Copyright 2012 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ff3a3a3a">
+
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/list_item_menu_header_textview"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:focusable="false" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#990000"/>
+</LinearLayout>
+<!-- clickable set to true to prevent orange background on click in app widget -->
+<!-- From: file:/C:/Users/Alex/Google%20Drive/CS/GitHub/PersonalProjects/HastingsCollegeProject/HastingsCollege/src/main/res/layout/list_item_header.xml -->

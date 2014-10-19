@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">Hastings College</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="drawer_items">
+        <item>Home</item>
+        <item>Campus Map</item>
+        <item>Dining Hall</item>
+        <item>BroncoBoard</item>
+        <item>Twitter</item>
+        <item>Campus Events</item>
+        <item>Athletics</item>
+        <item>Campus Contacts</item>
+        <item>About</item>
+    </string-array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <!--  Menu items -->
+    <string name="settings">Settings</string>
+    <string name="refresh">Refresh</string>
+
+    <!--  NetworkActivity -->
+    <string name="lost_connection">Lost connection.</string>
+    <string name="wifi_connected">Wi-Fi connected.</string>
+    <string name="connection_error">Unable to load content. Check your network connection.</string>
+    <string name="xml_error">Error parsing XML.</string>
+
+    <!-- URLs -->
+    <string name="home_url">http://www.hastings.edu</string>
+    <string name="athletics_url">http://www.hastingsbroncos.com/SIDHelp/m.php</string>
+    <string name="broncoboard_url">https://broncoboard.hastings.edu/</string>
+    <string name="twitter_base_url">https://twitter.com</string>
+    <string name="twitter_widget_host_url">https://dl.dropboxusercontent.com/s/nfwo1e75vmgofvm/index.html</string>
+    <string name="sodexo_menu_url">http://forms.hastings.edu/Apps/menu.xml</string>
+    <string name="campus_events_url">https://dl.dropboxusercontent.com/s/5vfwlsep6axr823/campus_events.json</string>
+
+    <!-- Nav Drawer -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_refresh">Refresh</string>
+
+    <!-- Sodexo Dining Hall Times -->
+    <string name="sodexo_breakfast_times_weekday">7:00 a.m. - 9:30 a.m.</string>
+    <string name="sodexo_breakfast_times_weekend">11:30 a.m. - 1:00 p.m.</string>
+    <string name="sodexo_lunch_times_weekday">11:15 a.m. - 1:15 p.m.</string>
+    <string name="sodexo_lunch_times_weekend">11:30 a.m. - 1:00 p.m.</string>
+    <string name="sodexo_dinner_times_weekday">5:15 p.m. - 7:15 p.m.</string>
+    <string name="sodexo_dinner_times_sat">5:15 p.m. - 6:15 p.m.</string>
+    <string name="sodexo_dinner_times_sun">5:15 p.m. - 7:00 p.m.</string>
+
+    <string name="sodexo_menu_btn">Menu</string>
+
+    <!-- Days of the Week for Sodexo -->
+
+    <string-array name="sodexo_menu_item_keys">
+        <item>menudate</item>
+        <item>dayname</item>
+        <item>meal</item>
+        <item>item_name</item>
+        <item>item_desc</item>
+        <item>serv_size</item>
+        <item>allergens</item>
+        <item>calories</item>
+        <item>fat</item>
+        <item>fat_pct_dv</item>
+        <item>calfat</item>
+        <item>satfat</item>
+        <item>satfat_pct_dv</item>
+        <item>transfat</item>
+        <item>chol</item>
+        <item>chol_pct_dv</item>
+        <item>sodium</item>
+        <item>sodium_pct_dv</item>
+        <item>carbo</item>
+        <item>carbo_pct_dv</item>
+        <item>dfib</item>
+        <item>dfib_pct_dv</item>
+        <item>sugars</item>
+        <item>protein</item>
+        <item>vita_pct_dv</item>
+        <item>vitc_pct_dv</item>
+        <item>calcium_pct_dv</item>
+        <item>iron_pct_dv</item>
+        <item>ingredient</item>
+    </string-array>
+
+    <string-array name="sodexo_menu_item_labels">
+        <item>Serving Size: </item>
+        <item>Allergens: </item>
+        <item>Calories: </item>
+        <item>Fat: </item>
+        <item>Fat % Daily Value: </item>
+        <item>Caloric Content of Fat: </item>
+        <item>Saturated Fat: </item>
+        <item>Saturated Fat % Daily Value: </item>
+        <item>Trans Fat: </item>
+        <item>Cholesterol: </item>
+        <item>Cholesterol % Daily Value: </item>
+        <item>Sodium: </item>
+        <item>Sodium % Daily Value: </item>
+        <item>Carbohydrates: </item>
+        <item>Carbohydrates % Daily Value: </item>
+        <item>Fiber: </item>
+        <item>Fiber % Daily Value: </item>
+        <item>Sugars: </item>
+        <item>Protein: </item>
+        <item>Vitamin A % Daily Value: </item>
+        <item>Vitamin C % Daily Value: </item>
+        <item>Calcium % Daily Value: </item>
+        <item>Iron % Daily Value: </item>
+        <item>Ingredients: </item>
+    </string-array>
+
+    <string-array name="days_of_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string name="sodexo_error_text">Sodexo Menu Not Available</string>
+
+    <!-- Emergency Contacts -->
+    <string-array name="emergency_contact_names">
+        <item>Public Safety</item>
+        <item>Student Affairs</item>
+        <item>Bronco Bus</item>
+        <item>Hastings Police (Non-Emergency)</item>
+        <item>I.T. Help Desk</item>
+        <item>Maintenance</item>
+        <item>Health Services</item>
+    </string-array>
+
+    <string-array name="emergency_contact_numbers">
+        <item>402–984–8064</item>
+        <item>402–461–7305</item>
+        <item>402–469–1564</item>
+        <item>402–461–2380</item>
+        <item>402–461–1333</item>
+        <item>402–461–7337</item>
+        <item>402–461–7372</item>
+    </string-array>
+
+    <string name="event_button">Event Schedule</string>
+    <string name="events_error">Campus Events Unavailable</string>
+
+    <!-- This is used as the title of a dialog which is used to sign in to a secure site.
+            "%s1"is replaced with the host and "%s2" with realm -->
+    <string name="sign_in_to">Sign in to <xliff:g id="hostname">%s1</xliff:g> \"<xliff:g id="realm">%s2</xliff:g>\"</string>
+    <!-- Prompt for an input box that allows the user to enter their login name -->
+    <string name="username">Name</string>
+    <!-- Prompt for an input box that allows the user to enter their password -->
+    <string name="password">Password</string>
+    <!-- The label on the "sign in" button -->
+    <string name="action">Sign in</string>
+    <!-- The name of the add bookmark page activity.-->
+    <string name="bookmarks_add_page">Save bookmark</string>
+    <!-- The name of the bookmarks and history search suggestion source.  -->
+    <string name="bookmarks_search">Browser</string>
+    <!-- Label for a cancel button.  It is used for multiple cancel buttons in different contexts -->
+    <string name="cancel">Cancel</string>
+    <!-- Label for a confirm button.  Used in multiple contexts. -->
+    <string name="ok">OK</string>
+</resources>

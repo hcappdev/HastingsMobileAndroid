@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/contact_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btn_phone_num"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:paddingTop="6dip"
+        android:paddingBottom="2dip"
+        android:paddingLeft="6dp" />
+
+    <TextView
+        android:id="@+id/phone_num"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_name"
+        android:layout_toLeftOf="@+id/btn_phone_num"
+        android:textColor="#990000"
+        android:textSize="17sp"
+        android:paddingBottom="2dip"
+        android:paddingLeft="6dp">
+    </TextView>
+
+    <ImageView android:id="@+id/btn_phone_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="6dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_action_call"/>
+
+</RelativeLayout><!-- From: file:/C:/Users/Alex/Google%20Drive/CS/GitHub/PersonalProjects/HastingsCollegeProject/HastingsCollege/src/main/res/layout/list_item_econtacts.xml -->

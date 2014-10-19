@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#e5e5e5">
+
+    <include android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/list_item_header" />
+
+    <ListView android:id="@+id/days_of_week_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_layout"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/error_text"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:text="@string/sodexo_error_text"/>
+
+</RelativeLayout><!-- From: file:/C:/Users/Alex/Google%20Drive/CS/GitHub/PersonalProjects/HastingsCollegeProject/HastingsCollege/src/main/res/layout/sodexo.xml -->

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent">
+        <!-- Name Label -->
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/right_caret"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="6dip"
+            android:paddingBottom="2dip"
+            android:paddingLeft="6dp"/>
+        <!-- Description label -->
+        <TextView
+            android:id="@+id/item_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_name"
+            android:layout_toLeftOf="@+id/right_caret"
+            android:textColor="#ff2e2e2e"
+            android:paddingBottom="2dip"
+            android:paddingLeft="6dp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/right_caret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_caret"/>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\Alex\Google Drive\CS\GitHub\PersonalProjects\HastingsCollegeProject\HastingsCollege\build\intermediates\pre-dexed\debug\support-v4-19.1.0-c65b1bb6912c19b67a06b30da29dcc638d4ccb6c.jar"
+        jar="C:\Development\adt-bundle-windows-x86_64\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="C:\Users\Alex\Google Drive\CS\GitHub\PersonalProjects\HastingsCollegeProject\HastingsCollege\build\intermediates\pre-dexed\debug\classes-35ce5e3773f88d9cfb6693bd81b2e43827f200e0.jar"
+        jar="C:\Users\Alex\Google Drive\CS\GitHub\PersonalProjects\HastingsCollegeProject\HastingsCollege\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.3.23\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="7676c0cb230efa6ac41c47867d372ed5913029d4"/>
+
+</pre-dex-items>

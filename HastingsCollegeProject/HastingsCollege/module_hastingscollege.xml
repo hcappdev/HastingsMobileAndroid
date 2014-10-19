@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_hastingscollege" default="compile.module.hastingscollege">
+  <dirname property="module.hastingscollege.basedir" file="${ant.file.module_hastingscollege}"/>
+  
+  <property name="module.jdk.home.hastingscollege" value="${jdk.home.android_4.2.2_platform}"/>
+  <property name="module.jdk.bin.hastingscollege" value="${jdk.bin.android_4.2.2_platform}"/>
+  <property name="module.jdk.classpath.hastingscollege" value="jdk.classpath.android_4.2.2_platform"/>
+  
+  <property name="compiler.args.hastingscollege" value="${compiler.args}"/>
+  
+  <property name="hastingscollege.output.dir" value="${module.hastingscollege.basedir}/build/classes/debug"/>
+  <property name="hastingscollege.testoutput.dir" value="${module.hastingscollege.basedir}/build/classes/debug"/>
+  
+  <path id="hastingscollege.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="hastingscollege.module.production.classpath">
+    <path refid="${module.jdk.classpath.hastingscollege}"/>
+    <path refid="library.support-v4-13.0.0.classpath"/>
+  </path>
+  
+  <path id="hastingscollege.runtime.production.module.classpath">
+    <pathelement location="${hastingscollege.output.dir}"/>
+    <path refid="library.support-v4-13.0.0.classpath"/>
+  </path>
+  
+  <path id="hastingscollege.module.classpath">
+    <path refid="${module.jdk.classpath.hastingscollege}"/>
+    <pathelement location="${hastingscollege.output.dir}"/>
+    <path refid="library.support-v4-13.0.0.classpath"/>
+  </path>
+  
+  <path id="hastingscollege.runtime.module.classpath">
+    <pathelement location="${hastingscollege.output.dir}"/>
+    <path refid="library.support-v4-13.0.0.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.hastingscollege">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.hastingscollege">
+    <patternset refid="excluded.from.module.hastingscollege"/>
+  </patternset>
+  
+  <path id="hastingscollege.module.sourcepath">
+    <dirset dir="${module.hastingscollege.basedir}">
+      <include name="build/source/r/debug"/>
+      <include name="build/source/aidl/debug"/>
+      <include name="build/source/rs/debug"/>
+      <include name="build/source/buildConfig/debug"/>
+      <include name="build/res/rs/debug"/>
+      <include name="src/main/java"/>
+      <include name="src/main/res"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.hastingscollege" depends="compile.module.hastingscollege.production,compile.module.hastingscollege.tests" description="Compile module HastingsCollege"/>
+  
+  <target name="compile.module.hastingscollege.production" depends="register.custom.compilers" description="Compile module HastingsCollege; production classes">
+    <mkdir dir="${hastingscollege.output.dir}"/>
+    <javac2 destdir="${hastingscollege.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.hastingscollege}/javac">
+      <compilerarg line="${compiler.args.hastingscollege}"/>
+      <bootclasspath refid="hastingscollege.module.bootclasspath"/>
+      <classpath refid="hastingscollege.module.production.classpath"/>
+      <src refid="hastingscollege.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.hastingscollege"/>
+    </javac2>
+    
+    <copy todir="${hastingscollege.output.dir}">
+      <fileset dir="${module.hastingscollege.basedir}/build/source/r/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.hastingscollege.basedir}/build/source/aidl/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.hastingscollege.basedir}/build/source/rs/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.hastingscollege.basedir}/build/source/buildConfig/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.hastingscollege.basedir}/build/res/rs/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.hastingscollege.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.hastingscollege.basedir}/src/main/res">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.hastingscollege.tests" depends="register.custom.compilers,compile.module.hastingscollege.production" description="compile module HastingsCollege; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.hastingscollege" description="cleanup module">
+    <delete dir="${hastingscollege.output.dir}"/>
+    <delete dir="${hastingscollege.testoutput.dir}"/>
+  </target>
+</project>

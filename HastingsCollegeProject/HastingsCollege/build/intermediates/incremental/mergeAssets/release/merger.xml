@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="C:\Users\Alex\Google Drive\CS\GitHub\PersonalProjects\HastingsCollegeProject\HastingsCollege\src\main\assets" >
+            <file
+                name="map-data.json"
+                path="C:\Users\Alex\Google Drive\CS\GitHub\PersonalProjects\HastingsCollegeProject\HastingsCollege\src\main\assets\map-data.json" />
+        </source>
+    </dataSet>
+    <dataSet config="release" >
+        <source path="C:\Users\Alex\Google Drive\CS\GitHub\PersonalProjects\HastingsCollegeProject\HastingsCollege\src\release\assets" />
+    </dataSet>
+
+</merger>

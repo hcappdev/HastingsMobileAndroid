@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_card_background"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_content"
+        android:paddingBottom="6dp">
+        <!-- Name Label -->
+        <TextView
+            android:id="@+id/day_of_week"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingLeft="6dp"
+            android:paddingTop="6dip"
+            android:textSize="17sp"
+            android:textColor="#990000"
+            android:textStyle="bold" />
+        <!-- Description label -->
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/day_of_week"
+            android:paddingBottom="2dip"
+            android:paddingLeft="6dp"
+            android:textColor="#ff2e2e2e"
+            android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_content">
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                android:background="?android:attr/dividerVertical" />
+
+            <ImageView
+                android:id="@+id/about_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_action_about" />
+
+            <Button
+                android:id="@+id/menu_button"
+                style="@style/CardActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/about_event"
+                android:background="?android:selectableItemBackground"
+                android:gravity="left|center_vertical|center_horizontal"
+                android:text="@string/sodexo_menu_btn" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
+<!-- From: file:/C:/Users/Alex/Google%20Drive/CS/GitHub/PersonalProjects/HastingsCollegeProject/HastingsCollege/src/main/res/layout/list_item_sodexo_week.xml -->
